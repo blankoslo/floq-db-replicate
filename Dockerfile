@@ -17,5 +17,4 @@ ADD db_enable_fks.sql /db_enable_fks.sql
 
 WORKDIR /
 
-CMD exec crond -f -l 2
-
+CMD exec crond -f -L /var/log/crond.log
